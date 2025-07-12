@@ -1,15 +1,19 @@
 # General
 .DS_Store
 Thumbs.db
+instructions.md
+/versions
 
 # VS Code Host Extension
 /host/node_modules/
 /host/.vscode/
 /host/*.vsix
 /host/instructions.md
+/host/versions/
 
 # Chrome Companion Extension
 /companion/instructions.md
+/companion/versions/
 
 # Log files
 *.log
