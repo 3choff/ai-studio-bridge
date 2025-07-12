@@ -1,5 +1,7 @@
 # AI Studio Bridge - Companion (Chrome Extension)
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/LICENSE-2.0)
+
 This is the browser-side component of the AI Studio Bridge toolset. It runs as a Chrome extension to enhance the Google AI Studio user interface and communicate with the `AI Studio Bridge - Host` in VS Code.
 
 For full project details and installation instructions, please see the [main project README](../../README.md).

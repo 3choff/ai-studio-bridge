@@ -1,5 +1,7 @@
 # AI Studio Bridge - Host
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/LICENSE-2.0)
+
 This is the VS Code component of the AI Studio Bridge toolset. It acts as a local server, listening for commands from the `AI Studio Bridge - Companion` Chrome extension to seamlessly integrate Google AI Studio with your local development workflow.
 
 This extension is not useful on its own and is designed to work in tandem with its companion browser extension.
