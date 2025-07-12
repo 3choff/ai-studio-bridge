@@ -3,6 +3,7 @@
 Thumbs.db
 instructions.md
 /versions
+changes.md
 
 # VS Code Host Extension
 /host/node_modules/
@@ -10,10 +11,12 @@ instructions.md
 /host/*.vsix
 /host/instructions.md
 /host/versions/
+/host/changes.md
 
 # Chrome Companion Extension
 /companion/instructions.md
 /companion/versions/
+/companion/changes.md
 
 # Log files
 *.log
