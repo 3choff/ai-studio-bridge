@@ -1,0 +1,64 @@
+{
+  "name": "ai-studio-bridge-host",
+  "displayName": "AI Studio Bridge - Host",
+  "description": "The host server for the 'AI Studio Bridge - Companion' extension. Listens for commands from the AI Studio Bridge Companion to create files in VS Code and reference them in Cline chat.",
+  "version": "1.0.0",
+  "publisher": "3choff",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-github-username/ai-studio-bridge.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-studio-bridge.startServer",
+        "title": "AI Bridge: Start Server"
+      },
+      {
+        "command": "ai-studio-bridge.stopServer",
+        "title": "AI Bridge: Stop Server"
+      },
+      {
+        "command": "ai-studio-bridge.toggleServer",
+        "title": "AI Bridge: Toggle Server"
+      }
+    ],
+    "configuration": {
+      "title": "AI Studio Bridge",
+      "properties": {
+        "ai-studio-bridge.autoSubmit": {
+          "type": "boolean",
+          "default": false,
+          "description": "When enabled, instructions sent from AI Studio will be automatically submitted to the Cline. When disabled, the file will only be mentioned in the chat input for manual review."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/express": "^4.17.21",
+    "eslint": "^8.56.0",
+    "vscode-test": "^1.6.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

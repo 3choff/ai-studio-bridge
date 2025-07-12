@@ -1,0 +1,27 @@
+.syntax-highlighted-code-wrapper code {
+  text-wrap: nowrap !important;
+}
+
+.turn-footer {
+  display: flex !important;
+  justify-content: flex-end !important; /* Pushes all items to the right */
+  align-items: center !important; 
+  padding: 4px !important;
+  gap: 4px !important; 
+}
+
+
+ms-chat-turn:not(:last-of-type) .custom-copy-markdown-button,
+ms-chat-turn:not(:last-of-type) .custom-send-markdown-button {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease-in-out;
+}
+
+ms-chat-turn:not(:last-of-type):hover .custom-copy-markdown-button,
+ms-chat-turn:not(:last-of-type):hover .custom-send-markdown-button,
+ms-chat-turn:not(:last-of-type):focus-within .custom-copy-markdown-button,
+ms-chat-turn:not(:last-of-type):focus-within .custom-send-markdown-button {
+  opacity: 1;
+  pointer-events: auto;
+}

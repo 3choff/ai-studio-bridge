@@ -1,0 +1,45 @@
+.syntax-highlighted-code-wrapper code {
+  text-wrap: nowrap !important;
+}
+
+button[data-custom-button="true"] {
+  color: var(--custom-button-color, #4285f4) !important;
+}
+
+button[data-custom-button="true"]:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ai-bridge-tooltip {
+  position: fixed;
+  /* Light theme default */
+  background-color: #E6ECFF;
+  color: rgb(32, 33, 36);
+  /* border: 1px solid rgb(218, 220, 224); */
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 99999;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(-50%) scale(0.9);
+  transition: opacity 100ms ease-out, transform 100ms ease-out;
+}
+
+/* Dark theme override */
+body[data-ai-bridge-theme='dark'] .ai-bridge-tooltip {
+  background-color: #323232;
+  color: rgb(235, 235, 235);
+  /* border-color: #444; */
+}
+
+.ai-bridge-tooltip.visible {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+ms-chat-turn.keep-actions-visible .actions.hover-or-edit {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}

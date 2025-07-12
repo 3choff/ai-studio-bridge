@@ -1,0 +1,8 @@
+.vscode/**
+.vscode-test/**
+test/**
+.eslintrc.json
+**/*.map
+*.vsix
+versions/
+/instructions.md

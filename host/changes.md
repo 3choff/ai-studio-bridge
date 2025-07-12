@@ -1,0 +1,1 @@
+fix that instructions.md fails to be created if it does not exists

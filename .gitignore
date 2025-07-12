@@ -1,0 +1,16 @@
+# General
+.DS_Store
+Thumbs.db
+
+# VS Code Host Extension
+/host/node_modules/
+/host/.vscode/
+/host/*.vsix
+/host/instructions.md
+
+# Chrome Companion Extension
+/companion/instructions.md
+
+# Log files
+*.log
+npm-debug.log*

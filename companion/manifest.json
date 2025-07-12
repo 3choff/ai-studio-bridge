@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "AI Studio Bridge - Companion",
+  "version": "1.0.0",
+  "description": "Adds extra functionalities to Google AI Studio, including buttons to copy or send LLM's responses to VS Code.",
+  "permissions": [
+    "clipboardRead"
+  ],
+  "host_permissions": [
+    "http://localhost:4000/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://aistudio.google.com/*"],
+      "js": ["src/content.js"],
+      "css": ["src/styles.css"] 
+    }
+  ],
+  "action": {
+    "default_title": "AI Studio Bridge - Companion"
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  }
+}
