@@ -41,7 +41,7 @@ The toolset consists of two extensions that work in tandem:
 
 ## 📸 Demo
 
-*(This is a great place to add a GIF showing the workflow: clicking the "Send" button in Chrome and seeing the file pop up in VS Code.)*
+*(GIF showing the workflow: clicking the "Send" button in Chrome and seeing the file pop up in Cline chat.)*
 
 ## 🔧 Installation
 
@@ -82,4 +82,4 @@ Since these extensions are not on an official marketplace, you will need to inst
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
