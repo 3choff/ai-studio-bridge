@@ -2,11 +2,12 @@
   "name": "ai-studio-bridge-host",
   "displayName": "AI Studio Bridge - Host",
   "description": "The host server for the 'AI Studio Bridge - Companion' extension. Listens for commands from the AI Studio Bridge Companion to create files in VS Code and reference them in Cline chat.",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "publisher": "3choff",
+  "icon": "assets/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-github-username/ai-studio-bridge.git"
+    "url": "https://github.com/3choff/ai-studio-bridge.git"
   },
   "engines": {
     "vscode": "^1.85.0"
