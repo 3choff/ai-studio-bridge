@@ -2,21 +2,26 @@
   "manifest_version": 3,
   "name": "AI Studio Bridge - Companion",
   "version": "1.0.0",
-  "description": "Adds extra functionalities to Google AI Studio, including buttons to copy or send LLM's responses to VS Code.",
+  "description": "Adds extra functionalities to Google AI Studio and T3.chat, including buttons to copy or send LLM's responses to VS Code.",
   "permissions": [
     "clipboardRead"
   ],
   "host_permissions": [
-    "http://localhost:4000/*"
+    "http://localhost:4000/*",
+    "https://aistudio.google.com/*",
+    "https://t3.chat/*"
   ],
   "background": {
     "service_worker": "src/background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://aistudio.google.com/*"],
+      "matches": [
+        "https://aistudio.google.com/*",
+        "https://t3.chat/*"
+      ],
       "js": ["src/content.js"],
-      "css": ["src/styles.css"] 
+      "css": ["src/styles.css"]
     }
   ],
   "action": {
